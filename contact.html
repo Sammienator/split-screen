@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../SPLITSCREEN/contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <div class="iconBX active" data-id="content1" >
+                <img src="../SPLITSCREEN/image/twitter.png"  alt="">
+
+            </div>
+
+            <div class="iconBX" data-id="content2">
+                <img src="../SPLITSCREEN/image/facebook4.jpg" alt="">
+            </div>
+
+            <div class="iconBX" data-id="content3">
+                <img src="../SPLITSCREEN/image/Google.png"  alt="">
+                
+            </div>
+
+            <div class="iconBX" data-id="content4">
+                <img src="../SPLITSCREEN/image/phone.png"  alt="">
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="contentBX active" id="content1">
+                <div>
+                    <div class="text">
+                        <h2> Twitter text</h2>
+                        <p>
+                            Outbound Experiences
+                            Sports & Recreation
+                            Team Building and Adventure all in one.
+                            Come and experience the outdoors like never before.
+                            We are just a phone call away.
+                            The 🗺 awaits.
+
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="contentBX" id="content2">
+                <div >
+                    <div class="text">
+                        <h2> Facebook text</h2>
+                        <p>
+                            Outbound Experiences
+                            Sports & Recreation
+                            Team Building and Adventure all in one.
+                            Come and experience the outdoors like never before.
+                            We are just a phone call away.
+                            The 🗺 awaits.
+
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="contentBX" id="content3">
+                <div >
+                    <div class="text">
+                        <h2> Google text</h2>
+                        <p>
+                            Outbound Experiences
+                            Sports & Recreation
+                            Team Building and Adventure all in one.
+                            Come and experience the outdoors like never before.
+                            We are just a phone call away.
+                            The 🗺 awaits.
+
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="contentBX" id="content4">
+                <div  >
+                    <div class="text">
+                        <h2> Phone text</h2>
+                        <p>
+                            Outbound Experiences
+                            Sports & Recreation
+                            Team Building and Adventure all in one.
+                            Come and experience the outdoors like never before.
+                            We are just a phone call away.
+                            The 🗺 awaits.
+
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        var iconBX = document.querySelectorAll('.iconBX');
+        var contentBX = document.querySelectorAll('.contentBX');
+
+        for(var i = 0; i<iconBX.length; i++){
+            iconBX[1].addEventListener('mouseover', function(){
+                for(var i=0;i<contentBX.length; i++){
+                    contentBX[i].className='contentBX'
+                }
+                document.getElementById(this.dataset.id).className ='contentBX active';
+
+                for( var i= 0; i<iconBX.length;i++){
+                    iconBX[i].className='iconBX'
+                }
+                this.className='contentBX active';
+
+            })
+        }
+
+    </script>
+</body>
+</html>
